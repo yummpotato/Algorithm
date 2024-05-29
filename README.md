@@ -1,2 +1,2 @@
 # Algorithm
-Programmers0 Kotlin Challenges
+Programmers0 Challenges
