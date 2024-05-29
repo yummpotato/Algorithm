@@ -18,7 +18,7 @@ function solution(lottos, win_nums) {
         case 6: max = 1; min = 1; break;
         case 5: {
             min = 2; 
-            {unknown == 1 ? max = 1 : max = 2}
+            {unknown > 0 ? max = 1 : max = 2}
             break;
         }
         case 4: { 
@@ -63,27 +63,7 @@ function solution(lottos, win_nums) {
             } max = 5;
             break;
         }
-        case 1: { 
-            min = 6;
-            if(unknown == 1) {
-                max = 5;
-                break;
-            } else if(unknown ==  2) {
-                max = 4;
-                break;
-            } else if(unknown == 3) {
-                max = 3;
-                break;
-            } else if(unknown == 4) {
-                max = 2;
-                break;
-            } else if(unknown == 5) {
-                max = 1;
-                break;
-            } max = 6;
-            break;
-        }
-        case 0: { 
+        default: { 
             min = 6;
             if(unknown == 1) {
                 max = 6;
